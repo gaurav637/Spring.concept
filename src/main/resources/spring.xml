@@ -4,9 +4,35 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+       <bean id = "student1" class="Collection_Types.Student">
+           <property name = "name" value="ram"/>
+
+           <property name="phone">
+               <list>
+                   <value>912028233</value>
+                   <value>903747643</value>
+                   <value>383645720</value>
+               </list>
+           </property>
+
+           <property name = "address">
+               <set>
+                   <value>punjab</value>
+                   <value>hudoli</value>
+                   <value>purola</value>
+               </set>
+           </property>
+
+           <property name = "course">
+               <map>
+                   <entry key="java" value="2 months"/>
+                   <entry key="c" value="1 months"/>
+                   <entry key="c++" value="1.5 months"/>
+               </map>
+           </property>
+       </bean>
 
 </beans>
