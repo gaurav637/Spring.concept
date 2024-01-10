@@ -17,6 +17,17 @@ public class Main {
         Employee classEmp = (Employee) contextEmp.getBean("emp");
 
         System.out.println(classEmp);
+        System.out.println("customer class -> ");
+
+        ApplicationContext customerCon = new ClassPathXmlApplicationContext("config.xml");
+        customer cut = (customer) customerCon.getBean("customer_id");
+        System.out.println(cut);
+
+        System.out.println("college class -> ");
+
+        ApplicationContext contextCollege = new ClassPathXmlApplicationContext("config.xml");
+        college obj = (college) contextCollege.getBean("college1");
+        System.out.println(obj);
 
     }
 }
