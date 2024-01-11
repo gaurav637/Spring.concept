@@ -49,4 +49,32 @@
 
       <bean id = "college1" class = "com.spring.spring_concept.college" p:id = "102" p:name = "DAVIET" p:branch="BCA" />
 
+    <bean id = "student1" class="Collection_Types.Student">
+        <property name = "name" value="ram"/>
+
+        <property name="phone">
+            <list>
+                <value>912028233</value>
+                <value>903747643</value>
+                <value>383645720</value>
+            </list>
+        </property>
+
+        <property name = "address">
+            <set>
+                <value>punjab</value>
+                <value>hudoli</value>
+                <value>purola</value>
+            </set>
+        </property>
+
+        <property name = "course">
+            <map>
+                <entry key="java" value="2 months"/>
+                <entry key="c" value="1 months"/>
+                <entry key="c++" value="1.5 months"/>
+            </map>
+        </property>
+    </bean>
+
 </beans>
