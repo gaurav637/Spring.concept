@@ -29,5 +29,9 @@ public class Main {
         college obj = (college) contextCollege.getBean("college1");
         System.out.println(obj);
 
+
+
     }
 }
+
+//  /Users/sudhanshubhardwaj/Desktop/Spring Framework/Spring.concept/src/main/resources/spring.xml
