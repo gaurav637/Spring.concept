@@ -1,4 +1,4 @@
-package com.spring.annotation;
+package com.spring2.autowired;
 
 public class Address {
 	
